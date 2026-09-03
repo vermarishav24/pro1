@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | My Website</title>
+    <title>About | My Website</title>
 
     <style>
         * {
@@ -51,18 +51,22 @@
             color: #00eaff;
         }
 
-        .hero {
+        .about {
             min-height: calc(100vh - 80px);
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            padding: 40px;
         }
 
-        .container {
-            padding: 60px 80px;
+        .card {
+            max-width: 800px;
+            padding: 60px;
+            text-align: center;
+
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 25px;
+
             background: rgba(255, 255, 255, 0.1);
 
             -webkit-backdrop-filter: blur(15px);
@@ -72,31 +76,31 @@
         }
 
         h1 {
-            font-size: 70px;
-            margin-bottom: 20px;
-            text-shadow: 0 0 25px #00eaff;
+            font-size: 55px;
+            margin-bottom: 25px;
+            color: #00eaff;
+            text-shadow: 0 0 20px #00eaff;
         }
 
         p {
-            font-size: 22px;
+            font-size: 20px;
+            line-height: 1.8;
             color: #dcdcff;
-            margin-bottom: 30px;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 14px 30px;
-            border-radius: 30px;
+        .skills {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            padding: 12px 20px;
+            border-radius: 25px;
             background: linear-gradient(90deg, #00eaff, #7b2ff7);
-            color: white;
-            text-decoration: none;
             font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            transform: scale(1.08);
-            box-shadow: 0 0 25px #00eaff;
         }
     </style>
 </head>
@@ -113,18 +117,25 @@
         </ul>
     </nav>
 
-    <section class="hero">
+    <section class="about">
 
-        <div class="container">
-            <h1>Hello World! 👋</h1>
+        <div class="card">
+
+            <h1>About Me 👨‍💻</h1>
 
             <p>
-                Welcome to my beautiful website ✨
+                Hello! I am a passionate learner and web developer.
+                I enjoy creating beautiful websites and learning
+                new technologies.
             </p>
 
-            <a href="about.html" class="btn">
-                Learn More 🚀
-            </a>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+            </div>
+
         </div>
 
     </section>

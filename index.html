@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hello World</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(
+                135deg,
+                #0f0c29,
+                #302b63,
+                #24243e
+            );
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: #7b2ff7;
+            filter: blur(100px);
+            opacity: 0.5;
+            top: 10%;
+            left: 15%;
+        }
+
+        .circle2 {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: #00eaff;
+            filter: blur(100px);
+            opacity: 0.4;
+            bottom: 10%;
+            right: 15%;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            padding: 60px 80px;
+
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+
+            background: rgba(255, 255, 255, 0.1);
+
+            -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+
+            box-shadow:
+                0 25px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 70px;
+            color: white;
+            margin-bottom: 15px;
+
+            text-shadow:
+                0 0 20px #00eaff;
+
+            animation: glow 2s infinite alternate;
+        }
+
+        p {
+            font-size: 22px;
+            color: #dcdcff;
+            letter-spacing: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+
+            padding: 14px 30px;
+
+            border-radius: 30px;
+
+            background: linear-gradient(
+                90deg,
+                #00eaff,
+                #7b2ff7
+            );
+
+            color: white;
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+
+            box-shadow:
+                0 0 25px #00eaff;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow:
+                    0 0 10px #00eaff;
+            }
+
+            to {
+                text-shadow:
+                    0 0 35px #00eaff,
+                    0 0 60px #7b2ff7;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="circle"></div>
+    <div class="circle2"></div>
+
+    <div class="container">
+
+        <h1>Hello World!</h1>
+
+        <p>
+            Welcome to my first beautiful webpage ✨
+        </p>
+
+        <a href="#" class="btn">
+            Explore 🚀
+        </a>
+
+    </div>
+
+</body>
+</html>
